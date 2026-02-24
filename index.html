@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ app_name }} - Главная</title>
+</head>
+<body>
+    <h1>{{ app_name }}</h1>
+    <p>Версия: {{ app_version }}</p>
+
+    <!-- Блок информации об авторе -->
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+        <h2>Информация об авторе</h2>
+        <p><strong>Имя:</strong> {{ author_name }}</p>
+        <p><strong>Группа:</strong> {{ group }}</p>
+    </div>
+
+    <nav>
+        <ul>
+            {% for item in navigation %}
+            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <p>Добро пожаловать в приложение для просмотра курсов валют!</p>
+</body>
+</html>

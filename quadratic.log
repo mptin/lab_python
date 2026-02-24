@@ -1,0 +1,39 @@
+INFO: Solving equation: 1x^2 + -5x + 6 = 0
+DEBUG: Discriminant: 1
+INFO: Two real roots computed
+INFO: Solving equation: 1x^2 + -4x + 4 = 0
+DEBUG: Discriminant: 0
+INFO: One real root
+INFO: Solving equation: 1x^2 + 0x + 1 = 0
+DEBUG: Discriminant: -4
+WARNING: Discriminant < 0: no real roots
+INFO: Solving equation: 0x^2 + 2x + 3 = 0
+ERROR: Coefficient 'a' cannot be zero
+INFO: Solving equation: abcx^2 + 2x + 3 = 0
+CRITICAL: Parameter 'a' must be a number, got: abc
+INFO: Start solving: 1x^2 + -5x + 6 = 0
+DEBUG: D = 1
+INFO: Two roots found
+INFO: Start solving: 1x^2 + -4x + 4 = 0
+DEBUG: D = 0
+INFO: Single root found
+INFO: Start solving: 1x^2 + 0x + 1 = 0
+DEBUG: D = -4
+WARNING: No real roots (D < 0)
+INFO: Start solving: 0x^2 + 2x + 3 = 0
+ERROR: a equals zero - not a quadratic equation
+INFO: Start solving: xx^2 + 1x + 2 = 0
+CRITICAL: Bad type for 'a': <class 'str'>
+INFO: Start solving: 1x^2 + -5x + 6 = 0
+DEBUG: D = 1
+INFO: Two roots found
+INFO: Start solving: 1x^2 + -4x + 4 = 0
+DEBUG: D = 0
+INFO: Single root found
+INFO: Start solving: 1x^2 + 0x + 1 = 0
+DEBUG: D = -4
+WARNING: No real roots (D < 0)
+INFO: Start solving: 0x^2 + 2x + 3 = 0
+ERROR: a equals zero - not a quadratic equation
+INFO: Start solving: xx^2 + 1x + 2 = 0
+CRITICAL: Bad type for 'a': <class 'str'>
