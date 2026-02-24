@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+</head>
+<body>
+    <h1>Список пользователей</h1>
+    <ul>
+        {% for user in users %}
+        <li>
+            <a href="/user?id={{ user.id }}">{{ user.name }}</a>
+            (подписок: {{ user.subscriptions | length }})
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">← На главную</a>
+</body>
+</html>

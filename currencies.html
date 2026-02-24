@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Курсы валют</title>
+</head>
+<body>
+    <h1>Курсы валют (ЦБ РФ)</h1>
+
+    {% if error %}
+    <p style="color: red;">Ошибка: {{ error }}</p>
+    {% endif %}
+
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Код</th>
+            <th>Название</th>
+            <th>Курс</th>
+            <th>За номинал</th>
+        </tr>
+        {% for currency in currencies %}
+        <tr>
+            <td>{{ currency.char_code }}</td>
+            <td>{{ currency.name }}</td>
+            <td>{{ currency.value }} RUB</td>
+            <td>{{ currency.nominal }} шт.</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <form method="get" action="/currencies">
+        <button type="submit">🔄 Обновить курсы</button>
+    </form>
+
+    <a href="/">← На главную</a>
+</body>
+</html>
