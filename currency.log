@@ -1,0 +1,8 @@
+2026-02-24 15:30:26,433 - INFO - Вызов функции get_usd_eur с аргументами: ()
+2026-02-24 15:30:26,976 - INFO - Функция get_usd_eur успешно завершена. Результат: {'USD': 76.7519, 'EUR': 90.2833}
+2026-02-24 15:31:46,443 - INFO - Вызов функции get_usd_eur с аргументами: ()
+2026-02-24 15:31:47,860 - INFO - Функция get_usd_eur успешно завершена. Результат: {'USD': 76.7519, 'EUR': 90.2833}
+2026-02-24 15:46:57,556 - INFO - START fetch_currencies: args=()
+2026-02-24 15:46:58,084 - INFO - SUCCESS fetch_currencies: result={'USD': 76.7519, 'EUR': 90.2833}
+2026-02-24 15:59:33,951 - INFO - START fetch_currencies: args=()
+2026-02-24 16:00:03,958 - ERROR - ERROR fetch_currencies: ConnectionError: Ошибка подключения к API: HTTPSConnectionPool(host='www.cbr-xml-daily.ru', port=443): Max retries exceeded with url: /daily_json.js (Caused by NameResolutionError("HTTPSConnection(host='www.cbr-xml-daily.ru', port=443): Failed to resolve 'www.cbr-xml-daily.ru' ([Errno 8] nodename nor servname provided, or not known)"))
